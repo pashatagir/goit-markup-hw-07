@@ -1,0 +1,35 @@
+body {
+  font-family: 'Roboto', sans-serif;
+  color: var(--primary-color);
+}
+
+.title {
+  font-size: 36px;
+  line-height: 1.17;
+  text-align: center;
+  letter-spacing: 0.03em;
+}
+.title--with-margin-bottom {
+  margin-bottom: 50px;
+}
+
+.link {
+  text-decoration: none;
+  color: currentColor;
+  font-size: 14px;
+
+  transition: color var(--transition-timing), background-color var(--transition-timing),
+    border-color var(--transition-timing), fill var(--transition-timing);
+}
+
+.link:hover,
+.link:focus {
+  color: var(--accent-color);
+  fill: var(--accent-color);
+}
+
+img {
+  display: block;
+  max-width: 100%;
+  height: auto;
+}
