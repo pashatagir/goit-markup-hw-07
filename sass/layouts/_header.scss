@@ -35,11 +35,11 @@
   padding-right: 2px;
 }
 
-.current {
+.pages__link--current {
   color: var(--accent-color);
 }
 
-.current::after {
+.pages__link--current::after {
   content: '';
   display: block;
   width: 100%;
@@ -52,7 +52,7 @@
   bottom: -1px;
 }
 
-.pages__link:not(.current)::after {
+.pages__link:not(.pages__link--current)::after {
   content: '';
   display: block;
   width: 100%;

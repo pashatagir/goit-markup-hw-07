@@ -7,7 +7,7 @@
   background-color: rgba(0, 0, 0, 0.2);
   transition: opacity var(--transition-timing), visibility var(--transition-timing);
 }
-.is-hidden {
+.backdrop--is-hidden {
   opacity: 0;
   visibility: hidden;
   pointer-events: none;
@@ -25,7 +25,7 @@
   left: 50%;
   transform: translate(-50%, -50%);
 }
-.modal-btn {
+.modal__button {
   display: flex;
   justify-content: center;
   align-items: center;
@@ -43,8 +43,8 @@
   transition: var(--transition-timing);
 }
 
-.modal-btn:focus,
-.modal-btn:hover {
+.modal__button:focus,
+.modal__button:hover {
   fill: var(--accent-color);
 }
 
@@ -56,7 +56,7 @@
   width: 448px;
 }
 
-.form-paragraph {
+.form__title {
   margin-bottom: 12px;
   font-weight: 700;
   font-size: 20px;
@@ -65,10 +65,10 @@
   text-align: center;
 }
 
-.form-field:not(:nth-child(5)) {
+.form__field:not(:nth-child(5)) {
   margin-bottom: 10px;
 }
-.form-field:nth-child(5) {
+.form__field:nth-child(5) {
   margin-bottom: 20px;
 }
 
@@ -97,11 +97,11 @@
   transition: border-color var(--transition-timing);
 }
 
-.icon-wrap {
+.input-wrapper {
   position: relative;
 }
 
-.form-svg {
+.form-input__icon {
   position: absolute;
   top: 50%;
   left: 12px;
@@ -115,7 +115,7 @@
   border-color: var(--accent-color);
 }
 
-.form-input:focus + .form-svg {
+.form-input:focus + .form-input__icon {
   fill: var(--accent-color);
 }
 
@@ -193,7 +193,7 @@
   color: var(--hover-color);
 }
 
-.form-button {
+.form__button {
   line-height: 1.88;
   letter-spacing: 0.06em;
   color: var(--normal-color);

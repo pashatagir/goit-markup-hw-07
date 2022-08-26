@@ -1,15 +1,15 @@
-.regular-customer-list {
+.customers {
   display: flex;
   justify-content: center;
   gap: 30px;
 }
 
-.regular-customer-item {
+.customers__item {
   width: 170px;
   height: 92px;
 }
 
-.regular-customer-link {
+.customers__link {
   display: flex;
   align-items: center;
   justify-content: center;
@@ -20,7 +20,7 @@
   border-radius: 4px;
 }
 
-.regular-customer-link:hover,
-.regular-customer-link:focus {
+.customers__link:hover,
+.customers__link:focus {
   border-color: var(--accent-color);
 }

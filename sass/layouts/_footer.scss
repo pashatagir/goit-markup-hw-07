@@ -1,46 +1,45 @@
-.footsite {
+.footer {
   background-color: #2f303a;
   padding-top: 60px;
   padding-bottom: 60px;
 }
 
-.foot {
+.container--with-flex {
   display: flex;
   align-items: baseline;
 }
 
-.left-foot {
+.left-footer {
   margin-right: 70px;
   flex-grow: 1;
 }
 
-.address-section {
+.address {
   margin-top: 20px;
 }
 
-.address-item:nth-child(n + 2) {
+.address__item:nth-child(n + 2) {
   margin-top: 9px;
 }
-.addressmap-link {
+.address__map {
   font-style: normal;
   line-height: 1.71;
   letter-spacing: 0.03em;
   color: var(--normal-color);
 }
 
-.mail-and-tel-link {
+.address__mail-and-tel {
   font-style: normal;
   line-height: 1.71;
   letter-spacing: 0.03em;
   color: rgba(255, 255, 255, 0.6);
 }
 
-.action {
+.call {
   margin-right: 93px;
 }
 
-.action-paragraph,
-.send-paragraph {
+.call__title {
   font-weight: 700;
   margin-bottom: 20px;
   font-size: 14px;
@@ -50,13 +49,7 @@
   color: var(--normal-color);
 }
 
-.action-list {
-  display: flex;
-  justify-content: center;
-  gap: 10px;
-}
-
-.action-list .soc-link {
+.social__item .social__link {
   display: flex;
   justify-content: center;
   align-items: center;
@@ -67,12 +60,17 @@
   background-color: rgba(255, 255, 255, 0.1);
 }
 
-.action-list .soc-link:hover,
-.action-list .soc-link:focus {
+.social__item .social__link:hover,
+.social__item .social__link:focus {
   background-color: currentColor;
 }
 
-.send-input {
+.subscription {
+  display: flex;
+  gap: 12px;
+}
+
+.subscription__input {
   min-width: 358px;
   height: 50px;
   padding: 15px 0px 15px 15px;
@@ -89,16 +87,16 @@
   transition: border-color var(--transition-timing);
 }
 
-.send-input:focus {
+.subscription__input:focus {
   border-color: var(--normal-color);
   box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
 }
 
-.send-input:hover {
+.subscription__input:hover {
   border-color: var(--accent-color);
 }
 
-.send-input::placeholder {
+.subscription__input::placeholder {
   font-weight: 400;
   font-size: 16px;
   line-height: 1.25;
@@ -106,7 +104,7 @@
   color: rgba(255, 255, 255, 0.6);
 }
 
-.send-button {
+.subscription__button {
   line-height: 1.88;
   letter-spacing: 0.06em;
   color: var(--normal-color);
@@ -117,9 +115,4 @@
   justify-content: center;
   align-items: center;
   gap: 10px;
-}
-
-.send-wrap {
-  display: flex;
-  gap: 12px;
 }
