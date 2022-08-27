@@ -7,25 +7,25 @@
   background-position: center;
   text-align: center;
   padding: 200px 0px;
-}
 
-.hero__title {
-  max-width: 696px;
-  font-weight: 900;
-  font-size: 44px;
-  line-height: 1.36;
-  margin: 0 auto;
-  margin-bottom: 30px;
-  letter-spacing: 0.06em;
-  text-transform: uppercase;
-  color: var(--normal-color);
-}
+  &__title {
+    max-width: 696px;
+    font-weight: 900;
+    font-size: 44px;
+    line-height: 1.36;
+    margin: 0 auto;
+    margin-bottom: 30px;
+    letter-spacing: 0.06em;
+    text-transform: uppercase;
+    color: var(--normal-color);
+  }
 
-.hero__button {
-  line-height: 1.88;
-  letter-spacing: 0.06em;
-  color: var(--normal-color);
-  background-color: var(--accent-color);
-  padding: 10px 32px 10px 32px;
-  min-width: 216px;
+  &__button {
+    line-height: 1.88;
+    letter-spacing: 0.06em;
+    color: var(--normal-color);
+    background-color: var(--accent-color);
+    padding: 10px 32px 10px 32px;
+    min-width: 216px;
+  }
 }
