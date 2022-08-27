@@ -1,9 +1,9 @@
 .what-we-do {
   display: flex;
-  column-gap: 30px;
+  column-gap: $gap;
 
   &__item {
-    flex-basis: calc((100% - 60px) / 3);
+    flex-basis: calc((100% - 2 * $gap) / 3);
     position: relative;
   }
 

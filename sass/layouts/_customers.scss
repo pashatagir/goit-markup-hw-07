@@ -1,21 +1,22 @@
 .customers {
   display: flex;
   justify-content: center;
-  gap: 30px;
+  gap: $gap;
 
   &__item {
-    width: 170px;
+    width: calc((100% - 5 * $gap) / 6);
     height: 92px;
   }
 
   &__link {
+    @extend %link;
     display: flex;
     align-items: center;
     justify-content: center;
     fill: var(--color-deco);
     width: 100%;
     height: 100%;
-    border: 1px solid var(--color-deco);
+    border: $borderDef var(--color-deco);
     border-radius: 4px;
 
     &:hover,

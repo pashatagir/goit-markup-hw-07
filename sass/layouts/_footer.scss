@@ -21,6 +21,7 @@
     margin-top: 9px;
   }
   &__map {
+    @extend %link;
     font-style: normal;
     line-height: 1.71;
     letter-spacing: 0.03em;
@@ -28,6 +29,7 @@
   }
 
   &__mail-and-tel {
+    @extend %link;
     font-style: normal;
     line-height: 1.71;
     letter-spacing: 0.03em;

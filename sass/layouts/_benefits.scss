@@ -1,9 +1,9 @@
 .benefits {
   display: flex;
-  column-gap: 30px;
+  column-gap: $gap;
 
   &__item {
-    flex-basis: calc((100% - 90px) / 4);
+    flex-basis: calc((100% - 3 * $gap) / 4);
   }
 
   &__icon-wrapper {

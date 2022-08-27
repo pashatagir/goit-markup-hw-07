@@ -36,7 +36,7 @@
     height: 30px;
     background-color: var(--normal-color);
     border-radius: 50%;
-    border: 1px solid rgba(0, 0, 0, 0.1);
+    border: $borderDef rgba(0, 0, 0, 0.1);
 
     position: absolute;
     right: 8px;
@@ -94,7 +94,7 @@
     height: 40px;
     padding: 10px 0px 10px 42px;
     border-radius: 4px;
-    border: 1px solid rgba(33, 33, 33, 0.2);
+    border: $borderDef rgba(33, 33, 33, 0.2);
 
     transition: border-color var(--transition-timing);
 
@@ -123,7 +123,7 @@
     resize: none;
     cursor: pointer;
     border-radius: 4px;
-    border: 1px solid rgba(33, 33, 33, 0.2);
+    border: $borderDef rgba(33, 33, 33, 0.2);
     outline: none;
     transition: border-color var(--transition-timing);
 

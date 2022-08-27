@@ -28,14 +28,15 @@
   margin-top: 50px;
   display: flex;
   flex-wrap: wrap;
-  gap: 30px;
+  gap: $gap;
 
   &__item {
-    flex-basis: calc((100% - 60px) / 3);
+    flex-basis: calc((100% - 2 * $gap) / 3);
     background-color: var(--normal-color);
   }
 
   &__link {
+    @extend %link;
     display: block;
     &:hover,
     &:focus {
@@ -61,7 +62,7 @@
 
   &__box {
     padding: 20px 24px 20px 24px;
-    border: 1px solid #eeeeee;
+    border: $borderDef #eeeeee;
     border-top: none;
   }
 

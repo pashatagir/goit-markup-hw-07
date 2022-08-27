@@ -6,17 +6,17 @@
   letter-spacing: 0.03em;
   color: var(--accent-color);
   text-decoration: none;
-}
 
-.logo__header {
-  padding-top: 24px;
-  margin-right: 93px;
-}
+  .navigation__& {
+    padding-top: 24px;
+    margin-right: 93px;
+  }
 
-.logo__dark {
-  color: #000000;
-}
+  &--dark {
+    color: #000000;
+  }
 
-.logo__light {
-  color: var(--normal-color);
+  &--light {
+    color: var(--normal-color);
+  }
 }
