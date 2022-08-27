@@ -4,6 +4,7 @@ body {
 }
 
 .title {
+  // @include font(null, 36px, 1.17, 0.03em);
   font-size: 36px;
   line-height: 1.17;
   text-align: center;

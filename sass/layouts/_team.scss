@@ -16,32 +16,24 @@
   }
 
   &__title {
-    font-weight: 500;
-    font-size: 16px;
-    line-height: 1.19;
-    letter-spacing: 0.03em;
+    @include font(500, 16px, 1.19, 0.03em);
     margin-bottom: 10px;
   }
 
   &__text {
-    font-size: 16px;
-    line-height: 1.19;
-    letter-spacing: 0.03em;
+    @include font(null, 16px, 1.19, 0.03em);
     margin-bottom: 16px;
     color: var(--minor-color);
   }
 }
 
 .social {
-  display: flex;
-  justify-content: center;
+  @include flex(flex, center, null);
   gap: 10px;
 
   &__link {
     @extend %link;
-    display: flex;
-    justify-content: center;
-    align-items: center;
+    @include flex(flex, center, center);
     width: 44px;
     height: 44px;
     border-radius: 50px;

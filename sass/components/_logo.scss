@@ -1,16 +1,8 @@
 .logo {
+  @include font(700, 26px, 1.2, 0.03em);
   font-family: 'Raleway';
-  font-weight: 700;
-  font-size: 26px;
-  line-height: 1.2;
-  letter-spacing: 0.03em;
   color: var(--accent-color);
   text-decoration: none;
-
-  .navigation__& {
-    padding-top: 24px;
-    margin-right: 93px;
-  }
 
   &--dark {
     color: #000000;
@@ -19,4 +11,9 @@
   &--light {
     color: var(--normal-color);
   }
+}
+
+.navigation__logo {
+  padding-top: 24px;
+  margin-right: 93px;
 }

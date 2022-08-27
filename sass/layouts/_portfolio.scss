@@ -1,15 +1,12 @@
 .filters {
-  display: flex;
-  justify-content: center;
+  @include flex(flex, center, null);
 
   &__item:not(:last-child) {
     margin-right: 8px;
   }
 
   &__button {
-    font-weight: 500;
-    line-height: 1.63;
-    letter-spacing: 0.03em;
+    @include font(500, null, 1.63, 0.03em);
     color: inherit;
     background-color: var(--secondary-color);
     border-radius: 4px;
@@ -47,16 +44,12 @@
   }
 
   &__title {
-    font-size: 18px;
-    line-height: 2;
-    letter-spacing: 0.06em;
+    @include font(null, 18px, 2, 0.06em);
     margin-bottom: 4px;
   }
 
   &__text {
-    font-size: 16px;
-    line-height: 1.88;
-    letter-spacing: 0.03em;
+    @include font(null, 16px, 1.88, 0.03em);
     color: var(--minor-color);
   }
 
@@ -73,9 +66,7 @@
   }
 
   &__overlay {
-    font-size: 18px;
-    line-height: 1.6;
-    letter-spacing: 0.03em;
+    @include font(null, 18px, 1.6, 0.03em);
     height: 100%;
     padding: 63px 24px;
 
