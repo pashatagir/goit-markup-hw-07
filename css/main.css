@@ -276,6 +276,46 @@ img {
   height: auto;
 }
 
+:root {
+  --accent-color: #2196f3;
+  --hover-color: #188ce8;
+  --normal-color: #ffffff;
+  --primary-color: #212121;
+  --minor-color: #757575;
+  --secondary-color: #f5f4fa;
+  --color-deco: #afb1b8;
+  --transition-timing: 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.examples__link, .address__mail-and-tel, .address__map, .customers__link, .social__link, .contacts__link, .pages__link {
+  text-decoration: none;
+  color: currentColor;
+  font-size: 14px;
+  -webkit-transition: color var(--transition-timing), background-color var(--transition-timing), border-color var(--transition-timing), fill var(--transition-timing), -webkit-box-shadow var(--transition-timing);
+  transition: color var(--transition-timing), background-color var(--transition-timing), border-color var(--transition-timing), fill var(--transition-timing), -webkit-box-shadow var(--transition-timing);
+  transition: color var(--transition-timing), background-color var(--transition-timing), border-color var(--transition-timing), box-shadow var(--transition-timing), fill var(--transition-timing);
+  transition: color var(--transition-timing), background-color var(--transition-timing), border-color var(--transition-timing), box-shadow var(--transition-timing), fill var(--transition-timing), -webkit-box-shadow var(--transition-timing);
+}
+.examples__link:hover, .address__mail-and-tel:hover, .address__map:hover, .customers__link:hover, .social__link:hover, .contacts__link:hover, .pages__link:hover, .examples__link:focus, .address__mail-and-tel:focus, .address__map:focus, .customers__link:focus, .social__link:focus, .contacts__link:focus, .pages__link:focus {
+  color: var(--accent-color);
+  fill: var(--accent-color);
+}
+
+.section__title--hidden,
+.check__input {
+  position: absolute;
+  white-space: nowrap;
+  width: 1px;
+  height: 1px;
+  overflow: hidden;
+  border: 0;
+  padding: 0;
+  clip: rect(0 0 0 0);
+  -webkit-clip-path: inset(50%);
+          clip-path: inset(50%);
+  margin: -1px;
+}
+
 /* raleway-regular - latin */
 @font-face {
   font-family: "Raleway";
@@ -324,46 +364,6 @@ img {
   src: url("../fonts/roboto-v30-latin_cyrillic-900.eot"); /* IE9 Compat Modes */
   src: local(""), url("../fonts/roboto-v30-latin_cyrillic-900.eot?#iefix") format("embedded-opentype"), url("../fonts/roboto-v30-latin_cyrillic-900.woff2") format("woff2"), url("../fonts/roboto-v30-latin_cyrillic-900.woff") format("woff"), url("../fonts/roboto-v30-latin_cyrillic-900.ttf") format("truetype"), url("../fonts/roboto-v30-latin_cyrillic-900.svg#Roboto") format("svg"); /* Legacy iOS */
 }
-:root {
-  --accent-color: #2196f3;
-  --hover-color: #188ce8;
-  --normal-color: #ffffff;
-  --primary-color: #212121;
-  --minor-color: #757575;
-  --secondary-color: #f5f4fa;
-  --color-deco: #afb1b8;
-  --transition-timing: 250ms cubic-bezier(0.4, 0, 0.2, 1);
-}
-
-.examples__link, .address__mail-and-tel, .address__map, .customers__link, .social__link, .contacts__link, .pages__link {
-  text-decoration: none;
-  color: currentColor;
-  font-size: 14px;
-  -webkit-transition: color var(--transition-timing), background-color var(--transition-timing), border-color var(--transition-timing), fill var(--transition-timing), -webkit-box-shadow var(--transition-timing);
-  transition: color var(--transition-timing), background-color var(--transition-timing), border-color var(--transition-timing), fill var(--transition-timing), -webkit-box-shadow var(--transition-timing);
-  transition: color var(--transition-timing), background-color var(--transition-timing), border-color var(--transition-timing), box-shadow var(--transition-timing), fill var(--transition-timing);
-  transition: color var(--transition-timing), background-color var(--transition-timing), border-color var(--transition-timing), box-shadow var(--transition-timing), fill var(--transition-timing), -webkit-box-shadow var(--transition-timing);
-}
-.examples__link:hover, .address__mail-and-tel:hover, .address__map:hover, .customers__link:hover, .social__link:hover, .contacts__link:hover, .pages__link:hover, .examples__link:focus, .address__mail-and-tel:focus, .address__map:focus, .customers__link:focus, .social__link:focus, .contacts__link:focus, .pages__link:focus {
-  color: var(--accent-color);
-  fill: var(--accent-color);
-}
-
-.section__title--hidden,
-.check__input {
-  position: absolute;
-  white-space: nowrap;
-  width: 1px;
-  height: 1px;
-  overflow: hidden;
-  border: 0;
-  padding: 0;
-  clip: rect(0 0 0 0);
-  -webkit-clip-path: inset(50%);
-          clip-path: inset(50%);
-  margin: -1px;
-}
-
 .container {
   width: 1200px;
   padding: 0px 15px;

@@ -4,11 +4,11 @@
   color: var(--accent-color);
   text-decoration: none;
 
-  &--dark {
+  &__dark {
     color: #000000;
   }
 
-  &--light {
+  &__light {
     color: var(--normal-color);
   }
 }
