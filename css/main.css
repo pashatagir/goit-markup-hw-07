@@ -259,14 +259,14 @@ body {
   color: var(--primary-color);
 }
 
-.title {
+.section__title {
   font-size: 36px;
   line-height: 1.17;
   text-align: center;
   letter-spacing: 0.03em;
 }
 
-.title--with-margin-bottom {
+.section__title--with-margin-bottom {
   margin-bottom: 50px;
 }
 
@@ -409,10 +409,10 @@ img {
   color: var(--accent-color);
   text-decoration: none;
 }
-.logo--dark {
+.logo__dark {
   color: #000000;
 }
-.logo--light {
+.logo__light {
   color: var(--normal-color);
 }
 
